@@ -13,10 +13,10 @@ def split_line(text)
   ascii_arr = Array.new
 
   text.split('%n%').each do |t|
-    ascii = art.asciify(t)
-    ascii_arr.push(ascii)
+    ascii_res = art.asciify(t)
+    ascii_arr.push(ascii_res)
+    puts ascii_res
   end
 
-  puts ascii_arr.size
   return ascii_arr
 end
