@@ -1,12 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    artii (2.1.2)
     cowsay (0.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  artii (~> 2.1, >= 2.1.2)
   cowsay (~> 0.3.0)
 
 BUNDLED WITH
