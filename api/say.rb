@@ -7,5 +7,16 @@ Handler = Proc.new do |req, res|
 
   res.status = 200
   res['Content-Type'] = 'text/plain'
-  res.body = art.asciify(message)
+  res.body = split_line(message)
+end
+
+def split_line(text)
+  ascii_arr = Array.new
+
+  text.split.each do |t|
+    ascii = art.asciify(t)
+    ascii_arr.push(ascii)
+  end
+
+  return ascii_arr
 end
