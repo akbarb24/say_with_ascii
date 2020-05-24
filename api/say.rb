@@ -1,7 +1,5 @@
 require 'artii'
 
-art = Artii::Base.new :font => 'letters'
-
 Handler = Proc.new do |req, res|
   message = req.query['msg'] || 'World'
 
@@ -11,6 +9,7 @@ Handler = Proc.new do |req, res|
 end
 
 def split_line(text)
+  art = Artii::Base.new :font => 'letters'
   ascii_arr = Array.new
 
   text.split.each do |t|
