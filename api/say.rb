@@ -12,7 +12,7 @@ def split_line(text)
   art = Artii::Base.new :font => 'letters'
   ascii_arr = Array.new
 
-  text.split.each do |t|
+  text.split('%n%').each do |t|
     ascii = art.asciify(t)
     ascii_arr.push(ascii)
   end
