@@ -17,6 +17,6 @@ def split_line(text)
     ascii_arr.push(ascii)
   end
 
-  puts ascii_arr
+  puts ascii_arr.size
   return ascii_arr
 end
